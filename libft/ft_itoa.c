@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 17:24:32 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/20 16:27:12 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/21 14:52:09 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ char	*ft_itoa(int n)
 	size_t	size;
 	long	nb;
 	char	*str;
-	int		is_negative;
+	size_t	is_negative;
 
 	size = count_size((long)n);
-	str = (char *)malloc(sizeof(char) * (size + 1));
+	str = malloc(size + 1);
 	if (str == NULL)
 		return (NULL);
 	nb = (long)n;
@@ -55,7 +55,7 @@ char	*ft_itoa(int n)
 		is_negative = 1;
 	}
 	str[size] = '\0';
-	while (size > (size_t)is_negative)
+	while (size > is_negative)
 	{
 		str[size - 1] = nb % 10 + '0';
 		nb = nb / 10;

@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/13 17:00:23 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/16 19:29:58 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/23 19:41:29 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 	len = ft_strlen((char *)s);
 	i = 0;
-	if (!s || !f)
+	if (!s)
 		return (NULL);
 	dest = malloc(sizeof(char) * (len + 1));
 	if (!dest)

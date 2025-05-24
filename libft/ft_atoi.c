@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 20:06:49 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/20 16:05:15 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/23 19:37:07 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ int	ft_atoi(const char *str)
 			sign = -1;
 		i++;
 	}
-	if (str[i] == '-' || str[i] == '+')
-		return (0);
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		res = res * 10 + (str[i] - '0');

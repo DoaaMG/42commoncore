@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 14:16:01 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/20 16:42:58 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/23 19:39:42 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,8 @@ char	*ft_strdup(char *src)
 
 	i = 0;
 	while (src[i])
-	{
 		i++;
-	}
-	cpy = (char *)malloc(sizeof(char) * (i + 1));
+	cpy = malloc(i + 1);
 	if (!cpy)
 		return (NULL);
 	i = 0;

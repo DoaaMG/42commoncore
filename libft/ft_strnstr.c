@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 14:47:15 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/15 13:39:10 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/23 19:42:15 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (needle[0] == '\0')
+	if (needle[i] == '\0')
 		return ((char *)haystack);
 	while (i < len && haystack[i] != '\0')
 	{

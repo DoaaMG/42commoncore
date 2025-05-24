@@ -6,7 +6,7 @@
 #    By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/30 20:15:18 by doaamabr          #+#    #+#              #
-#    Updated: 2025/05/20 16:08:37 by doaamabr         ###   ########.fr        #
+#    Updated: 2025/05/22 20:58:30 by doaamabr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,9 +27,9 @@ SRCS_PART2 = ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
              ft_putendl_fd.c ft_putnbr_fd.c
 
 
-SRCS_BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
-             ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
-             ft_lstclear.c 
+SRCS_BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
+             ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
+             ft_lstclear_bonus.c 
 
 SRCS = $(SRCS_PART1) $(SRCS_PART2)
 

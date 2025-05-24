@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 11:10:16 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/15 13:36:55 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/23 19:43:04 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,6 @@ int	is_in_set(char c, const char *set)
 	return (0);
 }
 
-size_t	strlen(const char *str)
-{
-	size_t	len;
-
-	len = 0;
-	while (str[len])
-		len++;
-	return (len);
-}
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
@@ -42,7 +32,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 
 	start = 0;
-	end = strlen(s1);
+	end = ft_strlen(s1);
 	if (!s1 || !set)
 		return (NULL);
 	while (s1[start] && is_in_set(s1[start], set))
@@ -50,7 +40,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && is_in_set(s1[end - 1], set))
 		end--;
 	len = end - start;
-	dest = ((char *)malloc(len + 1));
+	dest = malloc(len + 1);
 	if (!dest)
 		return (NULL);
 	i = 0;

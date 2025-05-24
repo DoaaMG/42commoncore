@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 20:14:24 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/15 13:34:22 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/23 19:38:11 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int	main(void)
 	char str2[] = "Hellw";
 
 	printf("%d\n", ft_memcmp(str1, str2, 5));
+	printf("%d\n", memcmp(str1, str2, 5));
 
 	return (0);
 }*/

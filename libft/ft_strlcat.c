@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 13:22:10 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/15 19:08:25 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/23 19:40:41 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	len2;
 
 	i = 0;
-	len1 = (size_t)ft_strlen((char *)dest);
-	len2 = (size_t)ft_strlen((char *)src);
+	len1 = ft_strlen((char *)dest);
+	len2 = ft_strlen((char *)src);
 	if (size <= len1)
 		return (size + len2);
 	while (src[i] && i < size - len1 - 1)

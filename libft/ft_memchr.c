@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 14:23:41 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/15 13:34:15 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/23 19:38:08 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
 
-int	main(void)
-{
-	char str[] = "Salut paul";
-	printf("%s\n", (char *)ft_memchr(str, 'p', 10));
-	return (0);
+// #include <stdio.h>
+// #include <string.h>
 
-}*/
+// int	main(void)
+// {
+// 	char *str = 0;
+// 	printf("%s\n", (char *)ft_memchr("Hello", 'p', 10));
+// 	printf("%s\n", (char *)memchr(str, 'p', 10));
+
+// 	return (0);
+
+// }

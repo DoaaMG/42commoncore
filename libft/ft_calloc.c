@@ -6,12 +6,11 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 12:54:10 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/20 16:12:26 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/22 20:36:56 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdint.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -19,6 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t			i;
 
 	i = 0;
+	if (count != 0 && size > (size_t) - 1 / count)
+		return (NULL);
 	temp = malloc(size * count);
 	if (!temp)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: doaamabr <doaamabr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 14:47:39 by doaamabr          #+#    #+#             */
-/*   Updated: 2025/05/16 20:02:44 by doaamabr         ###   ########.fr       */
+/*   Updated: 2025/05/21 18:33:26 by doaamabr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = 0;
 	d = NULL;
-	if (!c)
+	if ((unsigned char)c == '\0')
 		return ((char *)&s[ft_strlen((char *)s)]);
 	while (s[i])
 	{
